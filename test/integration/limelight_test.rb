@@ -99,6 +99,15 @@ describe Limelight do
     end
   end
 
+  it "should get statistics for channels" do
+    with_a_cassette('channel statistics load') do
+      start_time = Date.new(2013,2,1).to_time.to_i    
+      end_time = Date.new(2013,3,1).to_time.to_i
+
+      statistics = @limelight.analytics_for_channels(start_time, end_time)
+    end
+  end
+
   it "should get media statistics" do
     with_a_cassette('media statistics load') do
       video = @limelight.upload(sample_mp4_file, title: 'test')

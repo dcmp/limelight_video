@@ -56,6 +56,20 @@ class Limelight
     JSON.parse response.body
   end
 
+  def analytics_for_channels(start_time, end_time, options = {})
+    # http://api.videoplatform.limelight.com/rest/organizations/<org id>/analytics/performance/channels.{xml,json,csv}
+    params = {
+      :start => start_time,
+      :end => end_time
+    }
+
+    params.merge!(options)
+
+    path = generate_encoded_path('get', "#{@base_analytics_url}/performance/channels.json", params, @host)
+    response = @client.get(path)
+    JSON.parse response.body
+  end
+
   def media_engagement(start_time, end_time, options = {})
     params = {
       :start => start_time,
