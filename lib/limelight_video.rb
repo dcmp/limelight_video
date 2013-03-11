@@ -40,6 +40,18 @@ class Limelight
     JSON.parse response.body
   end
 
+
+  # valid primary_use values are :all, :flash, :mobile264, :mobile3gp, :httplivestreaming
+  # default value is :all
+  def media_encodings(id, primary_use = :all)
+    # http://api.videoplatform.limelight.com/rest/organizations/<org id>/media/<media id>/encodings.{XML,JSON}
+    params = {:primary_use => primary_use.to_s}
+
+    path = generate_encoded_path('get', "#{@base_media_url}/#{id}/encodings.json", params)
+    response = @client.get(path, params)
+    JSON.parse response.body
+  end
+
   def update_media(id, attributes)
     path = generate_encoded_path('put', "#{@base_media_url}/#{id}/properties")
     response = @client.put(path, attributes)

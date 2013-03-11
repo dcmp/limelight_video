@@ -65,6 +65,13 @@ describe Limelight do
     end
   end
 
+  it 'should get encoding details for specific media' do
+    with_a_cassette('media encodings load') do
+      video = @limelight.upload(sample_mp4_file, title: 'test')
+      encodings = @limelight.media_encodings(video["media_id"])
+    end
+  end
+
   it 'should create a channel' do
     with_a_cassette('create a channel') do
       channel = @limelight.create_channel('test')
