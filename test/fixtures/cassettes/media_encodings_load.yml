@@ -2,7 +2,7 @@
 http_interactions: 
 - request: 
     method: post
-    uri: http://api.videoplatform.limelight.com/rest/organizations/dde8e72013ba44768e764e1bff217a5a/media?access_key=DaYkT4MO0DwIdTk1Af9XmHFHFGM%3D&expires=1363016307&signature=djIgBeq7yWisu7w8zia9ZVicepbL4ZOhCkP%2BHjfvuss%3D
+    uri: http://api.videoplatform.limelight.com/rest/organizations/dde8e72013ba44768e764e1bff217a5a/media?access_key=DaYkT4MO0DwIdTk1Af9XmHFHFGM%3D&expires=1363016384&signature=cDsJDJrdUdbdsxZvgS9FOIspmH9ZXFzIPY8Nx01ZdpE%3D
     body: 
       encoding: US-ASCII
       string: ""
@@ -25,7 +25,7 @@ http_interactions:
       server: 
       - nginx/0.8.54
       date: 
-      - Mon, 11 Mar 2013 15:33:35 GMT
+      - Mon, 11 Mar 2013 15:34:52 GMT
       content-type: 
       - application/json; charset=utf-8
       connection: 
@@ -35,19 +35,19 @@ http_interactions:
       status: 
       - 201 Created
       x-runtime: 
-      - 1341ms
+      - 1437ms
       content-length: 
       - "747"
       via: 
-      - 1.0 vps-099.iad.llnw.net
+      - 1.0 vps-162.iad.llnw.net
     body: 
       encoding: US-ASCII
-      string: "{\"publish_date\": null, \"category\": null, \"description\": null, \"sched_end_date\": null, \"tags\": [], \"title\": \"test\", \"media_id\": \"dd60ec8341bf48c1bd4be4532b946525\", \"media_type\": \"Video\", \"original_filename\": \"sample-mp4\", \"sched_start_date\": null, \"restrictionrule_id\": null, \"create_date\": 1363016014, \"state\": \"New\", \"total_storage_in_bytes\": 0, \"thumbnails\": [{\"url\": \"http://img.delvenetworks.com/0000000000000000000000/0000000000000000000000/defaultVideoPreviewImage.swf\", \"width\": \"\", \"height\": \"\"}, {\"url\": \"http://img.delvenetworks.com/0000000000000000000000/0000000000000000000000/defaultVideoPreviewImage.swf\", \"width\": \"\", \"height\": \"\"}], \"ref_id\": null, \"update_date\": 1363016014, \"custom_property\": null, \"duration_in_milliseconds\": 0}"
+      string: "{\"publish_date\": null, \"category\": null, \"description\": null, \"sched_end_date\": null, \"tags\": [], \"title\": \"test\", \"media_id\": \"42d781877900454ab24f5d7cdc5ebf86\", \"media_type\": \"Video\", \"original_filename\": \"sample-mp4\", \"sched_start_date\": null, \"restrictionrule_id\": null, \"create_date\": 1363016091, \"state\": \"New\", \"total_storage_in_bytes\": 0, \"thumbnails\": [{\"url\": \"http://img.delvenetworks.com/0000000000000000000000/0000000000000000000000/defaultVideoPreviewImage.swf\", \"width\": \"\", \"height\": \"\"}, {\"url\": \"http://img.delvenetworks.com/0000000000000000000000/0000000000000000000000/defaultVideoPreviewImage.swf\", \"width\": \"\", \"height\": \"\"}], \"ref_id\": null, \"update_date\": 1363016091, \"custom_property\": null, \"duration_in_milliseconds\": 0}"
     http_version: "1.1"
-  recorded_at: Mon, 11 Mar 2013 15:33:29 GMT
+  recorded_at: Mon, 11 Mar 2013 15:34:46 GMT
 - request: 
     method: get
-    uri: http://api.videoplatform.limelight.com/rest/organizations/dde8e72013ba44768e764e1bff217a5a/media/dd60ec8341bf48c1bd4be4532b946525/encodings.json?access_key=DaYkT4MO0DwIdTk1Af9XmHFHFGM%3D&expires=1363016309&primary_use=all&signature=zZPDc5QCVI3YiGke8wV5lQbehS8pEaDIabg6W03vZak%3D
+    uri: http://api.videoplatform.limelight.com/rest/organizations/dde8e72013ba44768e764e1bff217a5a/media/42d781877900454ab24f5d7cdc5ebf86/encodings.json?access_key=DaYkT4MO0DwIdTk1Af9XmHFHFGM%3D&expires=1363016386&primary_use=all&signature=BnLsY%2FlCnTO4KnKMaHmxipvEgL8q3I3eHqZdL2KzW%2BM%3D
     body: 
       encoding: US-ASCII
       string: ""
@@ -68,7 +68,7 @@ http_interactions:
       server: 
       - nginx/0.8.54
       date: 
-      - Mon, 11 Mar 2013 15:33:35 GMT
+      - Mon, 11 Mar 2013 15:34:52 GMT
       content-type: 
       - application/json;charset=UTF-8
       connection: 
@@ -78,12 +78,12 @@ http_interactions:
       cache-control: 
       - max-age=300,max-stale=18000, public
       etag: 
-      - "\"6a2c92bbe9b14263b7b0755075167342\""
+      - "\"c2683d816c8945dfa9cf398eb846921c\""
       content-length: 
       - "76"
     body: 
       encoding: US-ASCII
       string: "{\"errors\": [\"Media either does not exist or you do not have access to it.\"]}"
     http_version: "1.1"
-  recorded_at: Mon, 11 Mar 2013 15:33:29 GMT
+  recorded_at: Mon, 11 Mar 2013 15:34:46 GMT
 recorded_with: VCR 2.1.1

@@ -48,7 +48,7 @@ class Limelight
     params = {:primary_use => primary_use.to_s}
 
     path = generate_encoded_path('get', "#{@base_media_url}/#{id}/encodings.json", params)
-    response = @client.get(path, params)
+    response = @client.get(path)
     JSON.parse response.body
   end
 
