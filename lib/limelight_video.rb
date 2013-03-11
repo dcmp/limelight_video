@@ -207,9 +207,9 @@ class Limelight
     @client.delete(path)
   end
 
-  def list_channel_media(channel_id)
+  def list_channel_media(channel_id, options = {})
     # http://api.videoplatform.limelight.com/rest/organizations/<org id>/channels/<channel id>/media.{XML,JSON}
-    response = @client.get("#{@base_channels_url}/#{channel_id}/media.json")
+    response = @client.get("#{@base_channels_url}/#{channel_id}/media.json", options)
     JSON.parse response.body
   end
 
