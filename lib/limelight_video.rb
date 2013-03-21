@@ -35,6 +35,13 @@ class Limelight
     end
   end
 
+  def events(options = {})
+    # http://api.videoplatform.limelight.com/rest/organizations/<org id>/events
+    path = generate_encoded_path('get', "#{@base_url}/events", options, @host)
+    response = @client.get(path)
+    JSON.parse response.body
+  end
+
   def media_info(media_id)
     response = @client.get("#{@base_media_url}/#{media_id}/properties.json")
     JSON.parse response.body

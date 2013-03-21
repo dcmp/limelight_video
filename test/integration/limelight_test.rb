@@ -158,4 +158,13 @@ describe Limelight do
       # channel until it's been processed on the Limelight Platform
     end
   end
+
+  it "should get a list of events" do
+    with_a_cassette("events load") do
+      @events = @limelight.events
+
+      assert @events.include?("event_list")
+      assert @events["event_list"].class == Array
+    end
+  end
 end

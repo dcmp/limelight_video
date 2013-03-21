@@ -1,0 +1,38 @@
+--- 
+http_interactions: 
+- request: 
+    method: get
+    uri: http://api.videoplatform.limelight.com/rest/organizations/dde8e72013ba44768e764e1bff217a5a/events?access_key=DaYkT4MO0DwIdTk1Af9XmHFHFGM%3D&expires=1363895866&signature=mEy1%2B3%2BlnK2VBaYOac8lnO6s8L8sflBFqCZIPF3oCoU%3D
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      user-agent: 
+      - Faraday v0.8.6
+      accept-encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept: 
+      - "*/*"
+      connection: 
+      - close
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      server: 
+      - nginx/0.8.54
+      date: 
+      - Thu, 21 Mar 2013 19:52:51 GMT
+      content-type: 
+      - application/json
+      connection: 
+      - close
+      content-length: 
+      - "5820"
+    body: 
+      encoding: US-ASCII
+      string: "{\"data_as_of\":1363895571,\"has_next\":false,\"page_id\":0,\"event_list\":[{\"event_type\":\"MEDIA_CREATED\",\"event_id\":\"98f924e5d2b0455688161e487f595873\",\"event_timestamp\":1362669513,\"org_id\":\"dde8e72013ba44768e764e1bff217a5a\",\"properties\":{\"original_filename\":\"sample.mp4\",\"upload_method\":\"unknown\",\"media_id\":\"7a504e2a240f49e084825482902ae91f\"}},{\"event_type\":\"MEDIA_METADATA_MODIFIED\",\"event_id\":\"08dd18b303454f6299995404c1fc11a7\",\"event_timestamp\":1362669513,\"org_id\":\"dde8e72013ba44768e764e1bff217a5a\",\"properties\":{\"media_id\":\"7a504e2a240f49e084825482902ae91f\",\"property\":\"Title\"}},{\"event_type\":\"CHANNEL_CREATED\",\"event_id\":\"0d1bd001ec824a9c84e57286e42a5c2b\",\"event_timestamp\":1362669514,\"org_id\":\"dde8e72013ba44768e764e1bff217a5a\",\"properties\":{\"title\":\"new_channel\",\"channel_id\":\"a1803fd4dca34954860a9233fc966cd4\"}},{\"event_type\":\"CHANNEL_METADATA_MODIFIED\",\"event_id\":\"03d20a269dfd4e7bb2fb928dcee811a2\",\"event_timestamp\":1362669515,\"org_id\":\"dde8e72013ba44768e764e1bff217a5a\",\"properties\":{\"channel_id\":\"a1803fd4dca34954860a9233fc966cd4\",\"property\":\"State\"}},{\"event_type\":\"CHANNEL_CONTENTS_MODIFIED\",\"event_id\":\"51831c432a264ea4aaba1db2e78f31a9\",\"event_timestamp\":1362669516,\"org_id\":\"dde8e72013ba44768e764e1bff217a5a\",\"properties\":{\"channel_id\":\"a1803fd4dca34954860a9233fc966cd4\"}},{\"event_type\":\"MEDIA_METADATA_MODIFIED\",\"event_id\":\"52f699fc28bb41eea231611dcfe37fce\",\"event_timestamp\":1362669642,\"org_id\":\"dde8e72013ba44768e764e1bff217a5a\",\"properties\":{\"media_id\":\"7a504e2a240f49e084825482902ae91f\",\"property\":\"Thumbnail\"}},{\"event_type\":\"MEDIA_PROCESSING_SUCCESS\",\"event_id\":\"b36c8155f3984b9690c42e98fc0207f7\",\"event_timestamp\":1362669667,\"org_id\":\"dde8e72013ba44768e764e1bff217a5a\",\"properties\":{\"original_filename\":\"sample-mp4\",\"media_id\":\"7a504e2a240f49e084825482902ae91f\"}},{\"event_type\":\"MEDIA_CREATED\",\"event_id\":\"a81df1f5c515495bbbe917d1b39cbad7\",\"event_timestamp\":1362670953,\"org_id\":\"dde8e72013ba44768e764e1bff217a5a\",\"properties\":{\"original_filename\":\"sample.mp4\",\"upload_method\":\"unknown\",\"media_id\":\"f1e9a8a30c3547a8b010a1c048ac4915\"}},{\"event_type\":\"MEDIA_METADATA_MODIFIED\",\"event_id\":\"8b79e675d39a4123b5fe1261e81886ac\",\"event_timestamp\":1362670954,\"org_id\":\"dde8e72013ba44768e764e1bff217a5a\",\"properties\":{\"media_id\":\"f1e9a8a30c3547a8b010a1c048ac4915\",\"property\":\"Title\"}},{\"event_type\":\"MEDIA_METADATA_MODIFIED\",\"event_id\":\"70c11ae68e9e4bdeb027908acb7093aa\",\"event_timestamp\":1362671132,\"org_id\":\"dde8e72013ba44768e764e1bff217a5a\",\"properties\":{\"media_id\":\"f1e9a8a30c3547a8b010a1c048ac4915\",\"property\":\"Thumbnail\"}},{\"event_type\":\"MEDIA_PROCESSING_SUCCESS\",\"event_id\":\"fb79fed720a74574b5f305f1fec0e26a\",\"event_timestamp\":1362671156,\"org_id\":\"dde8e72013ba44768e764e1bff217a5a\",\"properties\":{\"original_filename\":\"sample-mp4\",\"media_id\":\"f1e9a8a30c3547a8b010a1c048ac4915\"}},{\"event_type\":\"MEDIA_CREATED\",\"event_id\":\"4a9c23a1b9e84a74a0ed242e1032fcb7\",\"event_timestamp\":1363015193,\"org_id\":\"dde8e72013ba44768e764e1bff217a5a\",\"properties\":{\"original_filename\":\"sample.mp4\",\"upload_method\":\"unknown\",\"media_id\":\"23b0805499164f5cbd28134a07bec56d\"}},{\"event_type\":\"MEDIA_METADATA_MODIFIED\",\"event_id\":\"7ec6a71ea8484c149cd02f0d2bcd09da\",\"event_timestamp\":1363015193,\"org_id\":\"dde8e72013ba44768e764e1bff217a5a\",\"properties\":{\"media_id\":\"23b0805499164f5cbd28134a07bec56d\",\"property\":\"Title\"}},{\"event_type\":\"MEDIA_METADATA_MODIFIED\",\"event_id\":\"cd4c764141154fd9a7d25e756a4d53c7\",\"event_timestamp\":1363015234,\"org_id\":\"dde8e72013ba44768e764e1bff217a5a\",\"properties\":{\"media_id\":\"23b0805499164f5cbd28134a07bec56d\",\"property\":\"Thumbnail\"}},{\"event_type\":\"MEDIA_PROCESSING_SUCCESS\",\"event_id\":\"3979d3e10b4b4f3aacc45a5821df9de4\",\"event_timestamp\":1363015250,\"org_id\":\"dde8e72013ba44768e764e1bff217a5a\",\"properties\":{\"original_filename\":\"sample-mp4\",\"media_id\":\"23b0805499164f5cbd28134a07bec56d\"}},{\"event_type\":\"MEDIA_CREATED\",\"event_id\":\"4e2734a150b24052b6825a1b64e898a2\",\"event_timestamp\":1363016014,\"org_id\":\"dde8e72013ba44768e764e1bff217a5a\",\"properties\":{\"original_filename\":\"sample.mp4\",\"upload_method\":\"unknown\",\"media_id\":\"dd60ec8341bf48c1bd4be4532b946525\"}},{\"event_type\":\"MEDIA_METADATA_MODIFIED\",\"event_id\":\"e7d5c280ed52464995643b7e50439bf4\",\"event_timestamp\":1363016014,\"org_id\":\"dde8e72013ba44768e764e1bff217a5a\",\"properties\":{\"media_id\":\"dd60ec8341bf48c1bd4be4532b946525\",\"property\":\"Title\"}},{\"event_type\":\"MEDIA_CREATED\",\"event_id\":\"b7c3478407eb4f5484a48e14d361d663\",\"event_timestamp\":1363016091,\"org_id\":\"dde8e72013ba44768e764e1bff217a5a\",\"properties\":{\"original_filename\":\"sample.mp4\",\"upload_method\":\"unknown\",\"media_id\":\"42d781877900454ab24f5d7cdc5ebf86\"}},{\"event_type\":\"MEDIA_METADATA_MODIFIED\",\"event_id\":\"e154a4285016489282d6c00a8de6fa34\",\"event_timestamp\":1363016091,\"org_id\":\"dde8e72013ba44768e764e1bff217a5a\",\"properties\":{\"media_id\":\"42d781877900454ab24f5d7cdc5ebf86\",\"property\":\"Title\"}},{\"event_type\":\"MEDIA_METADATA_MODIFIED\",\"event_id\":\"dd2091d1dd8a4c5d84f23263644455d1\",\"event_timestamp\":1363016135,\"org_id\":\"dde8e72013ba44768e764e1bff217a5a\",\"properties\":{\"media_id\":\"42d781877900454ab24f5d7cdc5ebf86\",\"property\":\"Thumbnail\"}},{\"event_type\":\"MEDIA_METADATA_MODIFIED\",\"event_id\":\"d70b12c1bc514b13a49f4f44be6f71c0\",\"event_timestamp\":1363016139,\"org_id\":\"dde8e72013ba44768e764e1bff217a5a\",\"properties\":{\"media_id\":\"dd60ec8341bf48c1bd4be4532b946525\",\"property\":\"Thumbnail\"}},{\"event_type\":\"MEDIA_PROCESSING_SUCCESS\",\"event_id\":\"a65da364cf3d4d0b8acc0f52267943fc\",\"event_timestamp\":1363016156,\"org_id\":\"dde8e72013ba44768e764e1bff217a5a\",\"properties\":{\"original_filename\":\"sample-mp4\",\"media_id\":\"dd60ec8341bf48c1bd4be4532b946525\"}},{\"event_type\":\"MEDIA_PROCESSING_SUCCESS\",\"event_id\":\"e380b59bff9441748638f02ab0481fbc\",\"event_timestamp\":1363016158,\"org_id\":\"dde8e72013ba44768e764e1bff217a5a\",\"properties\":{\"original_filename\":\"sample-mp4\",\"media_id\":\"42d781877900454ab24f5d7cdc5ebf86\"}}]}"
+    http_version: "1.1"
+  recorded_at: Thu, 21 Mar 2013 19:52:47 GMT
+recorded_with: VCR 2.1.1
