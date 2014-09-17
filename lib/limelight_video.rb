@@ -48,6 +48,14 @@ class Limelight
   end
 
 
+  # skimming thumnails
+  def thumbnails(id)
+    params = {}
+    path = generate_encoded_path('get', "#{@base_media_url}/#{id}/skimming_thumbnails.json", params)
+    response = @client.get(path)
+    JSON.parse response.body
+  end
+
   # valid primary_use values are :all, :flash, :mobile264, :mobile3gp, :httplivestreaming
   # default value is :all
   def media_encodings(id, primary_use = :all)

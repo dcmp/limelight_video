@@ -167,4 +167,13 @@ describe Limelight do
       assert @events["event_list"].class == Array
     end
   end
+
+  it "should retrieve skimming thumbnails" do
+    with_a_cassette("skimming thumbnails") do
+      video = @limelight.upload(sample_mp4_file, title: 'test')
+
+      @thumbnails = @limelight.thumbnails(video["media_id"])
+    end      
+  end
+
 end

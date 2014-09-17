@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.videoplatform.limelight.com/rest/organizations/dde8e72013ba44768e764e1bff217a5a/media?access_key=DaYkT4MO0DwIdTk1Af9XmHFHFGM%3D&expires=1410969910&signature=ZqFNel6zbAU%2BKOBigYCW3NTc%2Be7mGsDicGM0QR%2Fa%2FDU%3D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.9.0
+      content-type:
+      - multipart/form-data; boundary=-----------RubyMultipartPost
+      content-length:
+      - '248212'
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - '*/*'
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - max-age=300,max-stale=18000,public
+      content-length:
+      - '755'
+      content-type:
+      - application/json;charset=UTF-8
+      date:
+      - Wed, 17 Sep 2014 16:00:09 GMT
+      etag:
+      - '"c7d8b3eb114248bdb8cc40915396fdd6"'
+      connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"publish_date":null,"category":null,"description":null,"sched_end_date":null,"tags":[],"title":"test","media_id":"73ff843a699d4bb09ec256324ca0bee8","media_type":"Video","original_filename":"test","sched_start_date":null,"restrictionrule_id":null,"create_date":1410969607,"state":"Uploading","total_storage_in_bytes":0,"allow_ads":true,"thumbnails":[{"url":"http://img.delvenetworks.com/0000000000000000000000/0000000000000000000000/defaultVideoPreviewImage.swf","width":"","height":""},{"url":"http://img.delvenetworks.com/0000000000000000000000/0000000000000000000000/defaultVideoPreviewImage.swf","width":"","height":""}],"ref_id":null,"update_date":1410969607,"custom_property":{},"duration_in_milliseconds":0,"closed_captions_url":null,"captions":[]}'
+    http_version: '1.1'
+  recorded_at: Wed, 17 Sep 2014 16:00:12 GMT
+- request:
+    method: get
+    uri: http://api.videoplatform.limelight.com/rest/organizations/dde8e72013ba44768e764e1bff217a5a/media/73ff843a699d4bb09ec256324ca0bee8/skimming_thumbnails.json?access_key=DaYkT4MO0DwIdTk1Af9XmHFHFGM%3D&expires=1410969912&signature=3sTe3TSZx8uryI6ckQdt95EXtyrOfJXy4G7IuDYHKIM%3D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      user-agent:
+      - Faraday v0.9.0
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - max-age=300,max-stale=18000, public
+      date:
+      - Wed, 17 Sep 2014 16:00:09 GMT
+      etag:
+      - '"19de711cfaa4497498ee29c097ed2548"'
+      content-type:
+      - application/json;charset=UTF-8
+      content-length:
+      - '228'
+      connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"has_next":false,"data_as_of":1410969609,"page_id":0,"thumbnail_list":[{"index":0,"time_in_milliseconds":0,"width":120,"height":0,"url":"http://cpc.delvenetworks.com/3ejnIBO6RHYjnZOG_8helo/c_-EOmmdS7AnsJWMkygvug/skim/0.jpeg"}]}'
+    http_version: '1.1'
+  recorded_at: Wed, 17 Sep 2014 16:00:13 GMT
+recorded_with: VCR 2.9.3
